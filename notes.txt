@@ -1,0 +1,31 @@
+Login.jsp 
+
+
+Form 
+	Email
+	Password 
+			submit 
+			
+			
+	LoginController 
+			read 
+			validation 
+			
+			authentication 
+			select * from users where email = ? and password = ? 
+			ResultSet rs = 	executeQuery()
+			
+			
+			if(rs.next()){
+			
+				rs. get string role 
+					role -> admin 
+						redirect admin home jsp 
+					role -> customer 
+						redirect cusomer home jsp 
+			}else{
+				invalid credentials 
+				//redirect login 
+				
+			}
+			
