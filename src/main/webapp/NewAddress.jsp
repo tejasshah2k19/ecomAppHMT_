@@ -51,16 +51,27 @@
 </head>
 <body>
     <div class="signup-container">
-        <h2>Signup</h2>
-        <form action="SignupController" method="post">
-            <input type="text" name="firstName" placeholder="First Name">${firstNameError }
-            <input type="text" name="lastName" placeholder="Last Name" >${lastNameError}
-            <input type="email" name="email" placeholder="Email"  >
-            <input type="password" name="password" placeholder="Password" >
-            <input type="submit" value="Register">
+        <h2>New Address</h2>
+        <form action="AddressController" method="post">
+
+			Address: <textarea rows="3" cols="25" name="addressLine"></textarea>
+			Landmark:<input type="text" name="landMark"/>
+			City : <input type="text" name="city"/>
+			State:<select>
+						<option>Gujarat</option>
+						<option>Rajsthan</option>
+						<option>Maharastra</option>
+						<option>Bihar</option>
+						<option>UttarPradesh</option>
+					</select>
+			Pincode:<input type="text" name="pincode"/>
+			Lable : <input type="text" name="lable" placeholder="home , office , etc"/>
+			Mark As Default? <input type="checkbox" name="default" value="true"/>
+			
+			
+            <input type="submit" value="Save Address">
         </form>
          <br>
-    <a href="Login.jsp">Existing User?</a>
     </div>
    
 </body>

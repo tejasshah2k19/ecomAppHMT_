@@ -51,17 +51,16 @@
 </head>
 <body>
     <div class="signup-container">
-        <h2>Signup</h2>
-        <form action="SignupController" method="post">
-            <input type="text" name="firstName" placeholder="First Name">${firstNameError }
-            <input type="text" name="lastName" placeholder="Last Name" >${lastNameError}
+        <h2>Login</h2>
+        <form action="LoginController" method="post">
             <input type="email" name="email" placeholder="Email"  >
             <input type="password" name="password" placeholder="Password" >
-            <input type="submit" value="Register">
+            <input type="submit" value="Login">
         </form>
-         <br>
-    <a href="Login.jsp">Existing User?</a>
+        <br>
+        ${error }
+        <br>
+        <a href="Signup.jsp">New User?</a>
     </div>
-   
 </body>
 </html>
