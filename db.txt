@@ -1,0 +1,10 @@
+create table users (
+	userId int primary key auto_increment,
+	firstName varchar(30),
+	lastName varchar(30),
+	email varchar(30),
+	password varchar(30),
+	role varchar(10),
+	createdAt varchar(20),
+	active boolean
+);
