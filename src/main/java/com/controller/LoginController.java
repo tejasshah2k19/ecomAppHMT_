@@ -24,6 +24,7 @@ public class LoginController extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 //this is change 
+		//second change
 		boolean isError = false;
 
 		if (email == null || email.isBlank()) {
